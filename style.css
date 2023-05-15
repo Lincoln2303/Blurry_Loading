@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu ', sans-serif;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* NOTE: We use "overflow" on hidden, because we don't want scroll bars to be shown by default */
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+/* I.03. We start it with the background image: */
+.bg {
+    background: url('https://images.unsplash.com/photo-1615038403612-c0db30ce8f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2833&q=80') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    /* NOTE: We set z-index to -1, so it will be behind the loading-text class */
+    z-index: -1;
+    /* NOTE: We make it blur, by adding filter: blur(0px) => If we increase number in blur, then it get's more blurry   */
+    filter: blur(0px); 
+}
+
+/* I.04. Then we're styling the loading-text: */
+/* AFTER: We're adding our js in next section (section II.) */
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
+
+
+
+
